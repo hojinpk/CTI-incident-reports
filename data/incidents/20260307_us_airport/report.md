@@ -12,11 +12,11 @@ Several airports in North America and Europe have experienced cybersecurity brea
 
 ## Identified Entities
 ### Threat Actors
-- [object Object]
-- [object Object]
+- **Qilin**: Western New Mexico University, 스페인 Los Madroños 병원 등을 공격한 해커 컨소시엄.
+- **Cyber Islam**: 해리스버그, 윈저 등 북미 공항 PA 시스템을 해킹하여 정치적 메시지를 송출한 그룹.
 
 ### Malware & Tools
-- [object Object]
+- **Seedworm (Fakeset)**: 미국 공항 및 비영리 단체 네트워크에서 발견된 이란 연계 APT 그룹의 Python 백도어.
 
 ## MITRE ATT&CK Mapping
 
