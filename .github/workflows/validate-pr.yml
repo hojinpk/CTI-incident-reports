@@ -1,0 +1,45 @@
+name: Validate Incident Report PR
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'reports/**'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed JSON files
+        id: changed-files
+        uses: tj-actions/changed-files@v42
+        with:
+          files: reports/**/*.json
+
+      - name: Validate JSON syntax and structure
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "Checking $file..."
+            
+            # 1. JSON 문법 유효성 검사
+            if ! jq . "$file" > /dev/null 2>&1; then
+              echo "::error file=$file::Invalid JSON format in $file"
+              exit 1
+            fi
+            
+            # 2. 필수 필드 검사 (incident.json 인 경우)
+            if [[ "$file" == *"incident.json"* ]]; then
+              TITLE=$(jq -r '.title' "$file")
+              if [ "$TITLE" == "null" ] || [ -z "$TITLE" ]; then
+                echo "::error file=$file::Missing 'title' field in $file"
+                exit 1
+              fi
+            fi
+          done
+          echo "✅ All JSON files are correctly formatted and valid!"
