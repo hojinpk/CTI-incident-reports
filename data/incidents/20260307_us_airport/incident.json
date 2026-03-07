@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "65f55622-1fea-40ed-af95-6a12d4fdcc67",
+  "title": "Analysis of US airport",
+  "keyword": "US airport",
+  "submittedAt": "2026-03-07T23:43:15.326Z",
+  "analyzedAt": "2026-03-07T23:42:57.994Z",
+  "contributor": {
+    "githubUsername": "hojinpk"
+  },
+  "summary": "Several airports in North America and Europe have experienced cybersecurity breaches, including the broadcasting of unauthorized messages over public address systems, disruptions to flight information display screens, and system outages. Notable incidents include hacks at Harrisburg, Windsor, Kelowna, Victoria International Airports in Canada, and the Seattle-Tacoma International Airport. The attackers have used valid accounts and exfiltrated data over alternative protocols.",
+  "confidence": 0.8,
+  "totalArticlesAnalyzed": 10,
+  "aiModel": "unknown",
+  "ttps": [
+    {
+      "tacticId": "Unknown",
+      "tacticName": "Unknown",
+      "techniqueId": "T1078",
+      "techniqueName": "Unknown Technique",
+      "procedure": "Use of valid accounts for accessing airport PA systems and broadcasting unauthorized messages.",
+      "confidence": 0.8,
+      "sourceUrls": []
+    },
+    {
+      "tacticId": "Unknown",
+      "tacticName": "Unknown",
+      "techniqueId": "T1048",
+      "techniqueName": "Unknown Technique",
+      "procedure": "Exfiltration of data over alternative protocols, as seen in the broadcasts praising Hamas and criticizing President Trump.",
+      "confidence": 0.8,
+      "sourceUrls": []
+    }
+  ],
+  "actors": [
+    {
+      "name": "Qilin",
+      "description": "Hacker consortium responsible for multiple confirmed and unconfirmed attacks, including against Western New Mexico University and Hospital Los Madroños in Spain, as well as the 2022 attack on SpiceJet."
+    },
+    {
+      "name": "Cyber Islam",
+      "description": "Attributed to the hacks at Harrisburg, Windsor, Kelowna, and Victoria International Airports, broadcasting messages praising Hamas and criticizing President Trump."
+    }
+  ],
+  "malware": [
+    {
+      "name": "Seedworm",
+      "description": "Iranian APT group associated with the use of a Python backdoor called Fakeset on the networks of a U.S. airport and non-profit."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/san-francisco-international-airport-reveals-data-breach-on-two-websites?srsltid=AfmBOopEdZr_ax-H-2-JQGN990QWE1nzrImF0uBOo9Ub7VvQ87gdk7-9",
+      "title": "San Francisco International Airport reveals data breach on two ...",
+      "domain": "www.bitdefender.com"
+    },
+    {
+      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/san-francisco-international-airport-reveals-data-breach-on-two-websites?srsltid=AfmBOorEbc7c2qu2TlmF03OX8D_SNP7Ck31htQgyu0t7x3sWFKK2f5kw",
+      "title": "San Francisco International Airport reveals data breach on two ...",
+      "domain": "www.bitdefender.com"
+    },
+    {
+      "url": "https://komonews.com/news/local/seattle-cyberattack-exposes-data-of-90000-people-raises-security-concerns",
+      "title": "Port of Seattle alerting 90,000 people whose data was compromised ...",
+      "domain": "komonews.com"
+    },
+    {
+      "url": "https://www.oig.dhs.gov/sites/default/files/assets/2020-09/OIG-20-71-Sep20.pdf",
+      "title": "[PDF] Review of CBP's Major Cybersecurity Incident During a 2019 ...",
+      "domain": "www.oig.dhs.gov"
+    },
+    {
+      "url": "https://www.islands.com/1978735/worst-cyberattacks-airports/",
+      "title": "The Top 5 Worst Cyberattacks To Ever Hit Airports - Islands",
+      "domain": "www.islands.com"
+    },
+    {
+      "url": "https://www.cnn.com/2025/10/15/us/airport-cyber-breach-pennsylvania-canada-hnk",
+      "title": "Apparent hackers take over PA systems at 4 North American airports",
+      "domain": "www.cnn.com"
+    },
+    {
+      "url": "https://www.security.com/threat-intelligence/iran-cyber-threat-activity-us",
+      "title": "Seedworm: Iranian APT on Networks of U.S. Bank, Airport, Software ...",
+      "domain": "www.security.com"
+    },
+    {
+      "url": "https://www.nytimes.com/2025/10/16/us/airports-hacked-us-canada-trump-hamas.html",
+      "title": "Hacked Airport P.A. Systems Broadcast Anti-Trump and Pro-Hamas ...",
+      "domain": "www.nytimes.com"
+    },
+    {
+      "url": "https://www.facebook.com/NewsOn6/posts/cyber-attacktulsa-international-airport-confirms-it-was-targeted-in-a-cybersecur/1299842955297105/",
+      "title": "CYBER ATTACK: Tulsa International Airport confirms it was targeted ...",
+      "domain": "www.facebook.com"
+    },
+    {
+      "url": "https://www.cybersecuritydive.com/news/seattle-airport-cyberattack-widespread-outages/725342/",
+      "title": "Seattle airport confronts 4th day of cyberattack outages",
+      "domain": "www.cybersecuritydive.com"
+    }
+  ]
+}
