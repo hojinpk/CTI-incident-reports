@@ -22,18 +22,18 @@ Several airports in North America and Europe have experienced cybersecurity brea
 
 | Tactic | Technique ID | Technique Name | Confidence |
 | :--- | :--- | :--- | :--- |
-| Unknown | [T1078](https://attack.mitre.org/techniques/T1078/) | Unknown Technique | 80% |
-| Unknown | [T1048](https://attack.mitre.org/techniques/T1048/) | Unknown Technique | 80% |
+| Initial Access | [T1078](https://attack.mitre.org/techniques/T1078/) | Valid Accounts (Defense Evasion, Persistence 등) | 80% |
+| Exfiltration | [T1048](https://attack.mitre.org/techniques/T1048/) | Exfiltration Over Alternative Protocol (Exfiltration) | 80% |
 
 ### Detailed Procedures
 
 #### Unknown Technique ([T1078](https://attack.mitre.org/techniques/T1078/))
-- **Tactic:** Unknown
+- **Tactic:** Initial Access
 - **Procedure:** Use of valid accounts for accessing airport PA systems and broadcasting unauthorized messages.
 - [View on MITRE ATT&CK](https://attack.mitre.org/techniques/T1078/)
 
 #### Unknown Technique ([T1048](https://attack.mitre.org/techniques/T1048/))
-- **Tactic:** Unknown
+- **Tactic:** Exfiltration
 - **Procedure:** Exfiltration of data over alternative protocols, as seen in the broadcasts praising Hamas and criticizing President Trump.
 - [View on MITRE ATT&CK](https://attack.mitre.org/techniques/T1048/)
 
