@@ -28,7 +28,7 @@ jobs:
           python -c '
           import os, json
           
-          reports_dir = "reports"
+          reports_dir = "data/incidents"
           html_content = """
           <!DOCTYPE html>
           <html lang="en">
