@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - 'reports/**'
+      - 'data/incidents/**'
 
 jobs:
   validate-json:
@@ -19,7 +19,7 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v42
         with:
-          files: reports/**/*.json
+          files: data/incidents/**/*.json
 
       - name: Validate JSON syntax and structure
         if: steps.changed-files.outputs.any_changed == 'true'
